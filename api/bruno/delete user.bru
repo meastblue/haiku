@@ -1,0 +1,26 @@
+meta {
+  name: delete user
+  type: graphql
+  seq: 3
+}
+
+post {
+  url: http://127.0.0.1:8080/gql/users
+  body: graphql
+  auth: none
+}
+
+body:graphql {
+  mutation {
+    deleteUser(id: "ad9934a5-c78a-4493-b902-f457a2073976") {
+      id
+      firstName
+      lastName
+      email
+      createdAt
+      updatedAt
+      deletedAt
+    }
+  }
+  
+}

@@ -1,0 +1,80 @@
+# Ignorer les fichiers de configuration locale
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Ignorer les dépendances et les fichiers de compilation
+/target/
+**/node_modules/
+**/dist/
+**/build/
+
+# Ignorer les fichiers de débogage et de développement
+*.log
+*.swp
+*.swo
+*.DS_Store
+
+# Ignorer les fichiers générés par les IDE et les éditeurs
+.idea/
+.vscode/
+*.iml
+
+# Ignorer les fichiers de base de données locaux
+*.db
+*.sqlite
+
+# Ignorer les fichiers de migrations générés (si applicable)
+/migrations/*.sqlite
+
+# Ignorer les fichiers de cache
+**/.cache/
+
+# Ignorer les fichiers de dépendances Rust
+Cargo.lock
+
+# Ignorer les fichiers de dépendances JavaScript/TypeScript (si vous avez un projet web)
+**/package-lock.json
+**/yarn.lock
+
+# Ignorer les fichiers de configuration spécifiques à l'API
+api/.env
+api/.env.local
+
+# Ignorer les fichiers de configuration spécifiques au dossier web
+web/.env
+web/.env.local
+
+# Ignorer les fichiers de build du dossier web
+web/dist/
+web/build/
+
+# Ignorer les fichiers temporaires
+*.tmp
+*.temp
+
+# Ignorer les fichiers de sauvegarde
+*.bak
+*.backup
+
+# Ignorer les fichiers de documentation générés
+**/docs/
+**/doc/
+
+# Ignorer les fichiers de test
+**/__tests__/
+**/__mocks__/
+**/coverage/
+
+# Ignorer les fichiers spécifiques à Deno
+**/.deno/
+**/deno.lock
+
+# Ignorer les fichiers spécifiques à Respack
+**/.respack/
+**/respack.lock
+
+# Ignorer les fichiers de cache de Vite (si utilisé avec Respack)
+**/.vite/

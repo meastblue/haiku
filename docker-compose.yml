@@ -1,0 +1,22 @@
+services:
+  db:
+    image: postgres:bullseye
+    container_name: ${CONTAINER_DB_NAME}
+    env_file: .env
+    environment:
+      POSTGRES_DB: ${DB_NAME}
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    ports:
+      - ${DB_PORT}:${DB_PORT}
+    volumes:
+      - haiku_data:/var/lib/postgresql/data
+    networks:
+      - haiku_network
+
+volumes:
+    haiku_data:
+
+networks:
+    haiku_network:
+        driver: bridge

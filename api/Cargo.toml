@@ -1,0 +1,18 @@
+[package]
+name = "api"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+async-graphql = { version = "7.0.15", features = ["chrono", "uuid"] }
+async-graphql-axum = "7.0.15"
+axum = "0.8.1"
+chrono = { version = "0.4.40", features = ["serde"] }
+dotenvy = "0.15.7"
+serde = { version = "1.0.218", features = ["derive"] }
+serde_json = "1.0.140"
+sqlx = { version = "0.8.3", features = ["postgres", "runtime-tokio-rustls", "uuid", "chrono"] }
+tokio = { version = "1.43.0", features = ["full"] }
+uuid = { version = "1.15.1", features = ["v4"] }
+thiserror = "2.0.12"
+tower-http = { version = "0.6.2", features = ["cors"] }

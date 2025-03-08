@@ -1,0 +1,31 @@
+meta {
+  name: add users
+  type: graphql
+  seq: 2
+}
+
+post {
+  url: http://127.0.0.1:8080/gql/users
+  body: graphql
+  auth: none
+}
+
+body:graphql {
+  mutation {
+    createUser(
+      data: {
+        firstName: "John"
+        lastName: "Doe"
+        email: "john.doe@example.com"
+        password: "password123"
+      }
+    ) {
+      id
+      firstName
+      lastName
+      email
+      createdAt
+    }
+  }
+  
+}
