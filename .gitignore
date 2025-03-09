@@ -6,7 +6,7 @@
 .env.production
 
 # Ignorer les dépendances et les fichiers de compilation
-/target/
+**/target/
 **/node_modules/
 **/dist/
 **/build/
